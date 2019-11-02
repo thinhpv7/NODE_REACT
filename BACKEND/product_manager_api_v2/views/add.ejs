@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class = "col-12">
+                <hr/>
+            </div>
+
+            <div class="col-8 mx-auto">
+                <form action="/add" method="POST">
+                    <!-- tên sản phẩm -->
+                    <div class="form-group">
+                    <label for="">Tên sản phẩm</label>
+                    <input type="text"
+                        class="form-control" name="product_name" id="product_name" aria-describedby="name_text" placeholder="Nhập tên sản phẩm">
+                    <small id="name_text" class="form-text text-muted">Nhập tên vào</small>
+                    </div>
+                    
+                    <!-- giá sản phẩm -->
+                    <div class="form-group">
+                        <label for="">Gía sản phẩm</label>
+                        <input type="text"
+                            class="form-control" name="product_price" id="product_price" aria-describedby="price_text" placeholder="Nhập giá sản phẩm">
+                        <small id="price_text" class="form-text text-muted">Nhập giá vào</small>
+                    </div>
+
+                    <!-- ảnh sản phẩm -->
+                    <div class="form-group">
+                        <label for="">Đường link ảnh sản phẩm</label>
+                        <input type="text"
+                            class="form-control" name="image" id="image" aria-describedby="price_text" placeholder="Nhập giá sản phẩm">
+                        <small id="price_text" class="form-text text-muted">Nhập link ảnh vào</small>
+                    </div>
+
+                    <!-- button submit -->
+                    <button type="submit" class="btn btn-info">Thêm mới</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
